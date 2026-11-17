@@ -1,0 +1,28 @@
+# YOLOv8-EPB-Lite-SVD: Experimental architecture with SVD Pooling
+# /ultralytics/cfg/models/v8/yolov8-epb-lite-svd.yaml
+# Parameters
+nc: 80
+
+# Backbone
+backbone:
+  - [-1, 1, EfficientNetB0Backbone, []]
+
+# Head
+head:
+  # Розпаковка
+  - [0, 1, Index, [0]]  # P2
+  - [0, 1, Index, [1]]  # P3
+  - [0, 1, Index, [2]]  # P4
+  - [0, 1, Index, [3]]  # P5
+
+  # BiFPN Neck (SVD версія завантажиться з custom_svd.py)
+  - [[1, 2, 3, 4], 1, BiFPN, [[24, 40, 112, 320], 96, 2]]
+
+  # Розпаковка BiFPN
+  - [5, 1, Index, [0]]  # P2 out
+  - [5, 1, Index, [1]]  # P3 out
+  - [5, 1, Index, [2]]  # P4 out
+  - [5, 1, Index, [3]]  # P5 out
+
+  # Detect
+  - [[7, 8, 9], 1, Detect, [nc]]

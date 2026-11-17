@@ -1,0 +1,12 @@
+# YOLOv8-EPB-Lite: EfficientNet-B0 + BiFPN(96, x2) with MaxPool(3,2,1) in the bottom-up path, 3 Detect heads P3-P5.
+nc: 5
+
+backbone:
+  - [-1, 1, EfficientNetBackbone, ["b0"]]                    # 0: [P2, P3, P4, P5]
+
+head:
+  - [0, 1, PoolBiFPN, [96, 2, "max", "b0", "strict"]]    # 1: [P2, P3, P4, P5] x 96
+  - [1, 1, Index, [96, 1]]                                   # 2: P3
+  - [1, 1, Index, [96, 2]]                                   # 3: P4
+  - [1, 1, Index, [96, 3]]                                   # 4: P5
+  - [[2, 3, 4], 1, Detect, [nc]]                             # 5

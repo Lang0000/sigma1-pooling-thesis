@@ -1,0 +1,6 @@
+# dataset: keep labels/images byte-identical on Windows (no CRLF conversion)
+data/** -text
+*.ps1 text eol=crlf
+*.sh text eol=lf
+# model weights: Git LFS
+experiments/weights/**/*.pt filter=lfs diff=lfs merge=lfs -text

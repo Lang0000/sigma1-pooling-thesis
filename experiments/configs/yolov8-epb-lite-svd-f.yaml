@@ -1,0 +1,12 @@
+# YOLOv8-EPB-Lite-SVD-F: same as Lite-SVD, sigma1 computed analytically (eigen-decomposition of A^T A), no cuSOLVER.
+nc: 5
+
+backbone:
+  - [-1, 1, EfficientNetBackbone, ["b0"]]                    # 0: [P2, P3, P4, P5]
+
+head:
+  - [0, 1, PoolBiFPN, [96, 2, "sigma1_fast", "b0", "strict"]]    # 1: [P2, P3, P4, P5] x 96
+  - [1, 1, Index, [96, 1]]                                   # 2: P3
+  - [1, 1, Index, [96, 2]]                                   # 3: P4
+  - [1, 1, Index, [96, 3]]                                   # 4: P5
+  - [[2, 3, 4], 1, Detect, [nc]]                             # 5

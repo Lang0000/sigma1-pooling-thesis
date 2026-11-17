@@ -1,0 +1,58 @@
+{
+ "weights": "runs/F2_Lite-SVD-F_AMP/weights/best.pt",
+ "pool_kind": "sigma1_fast",
+ "images": 104,
+ "windows": 167731200,
+ "upstream_grad_nonzero": 167731200,
+ "upstream_grad_below_fp16_min_share": 0.9829082484355922,
+ "modes": {
+  "fp32": {
+   "maps": 78,
+   "mean_cos": 0.9999999999999676,
+   "min_cos": 0.9999999999984961,
+   "median_rel_err": 3.801630114678547e-07,
+   "max_rel_err": 1.6520092982071062e-05,
+   "nonfinite": 0
+  },
+  "fp16_in": {
+   "maps": 78,
+   "mean_cos": 0.9999999447403539,
+   "min_cos": 0.999998888853892,
+   "median_rel_err": 0.000773316059415246,
+   "max_rel_err": 0.014849808823723927,
+   "nonfinite": 0
+  },
+  "bf16_in": {
+   "maps": 78,
+   "mean_cos": 0.9999973597616256,
+   "min_cos": 0.999983728521949,
+   "median_rel_err": 0.006836020865235416,
+   "max_rel_err": 0.04028949007238019,
+   "nonfinite": 0
+  },
+  "fp16_g_unscaled": {
+   "maps": 78,
+   "mean_cos": 0.9170737532968448,
+   "min_cos": 0.30194206365458465,
+   "median_rel_err": 0.00023631254225807107,
+   "max_rel_err": 0.45726058548135523,
+   "nonfinite": 0
+  },
+  "fp16_g_scaled": {
+   "maps": 78,
+   "mean_cos": 0.9999999859090934,
+   "min_cos": 0.9999999802893932,
+   "median_rel_err": 0.0001823381981146878,
+   "max_rel_err": 0.0003728102524825079,
+   "nonfinite": 0
+  },
+  "maxpool": {
+   "maps": 78,
+   "mean_cos": 0.3541253302561401,
+   "min_cos": 0.22851360156252698,
+   "median_rel_err": 1.152626438460138,
+   "max_rel_err": 2.0937625458333775,
+   "nonfinite": 0
+  }
+ }
+}

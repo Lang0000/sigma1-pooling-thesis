@@ -1,0 +1,58 @@
+{
+ "weights": "runs/A2_Lite-SVD/weights/best.pt",
+ "pool_kind": "sigma1_svd",
+ "images": 104,
+ "windows": 167731200,
+ "upstream_grad_nonzero": 167731200,
+ "upstream_grad_below_fp16_min_share": 0.9828202266483517,
+ "modes": {
+  "fp32": {
+   "maps": 78,
+   "mean_cos": 0.9999999999999858,
+   "min_cos": 0.9999999999999216,
+   "median_rel_err": 3.4073992357833647e-07,
+   "max_rel_err": 3.44538807624643e-06,
+   "nonfinite": 0
+  },
+  "fp16_in": {
+   "maps": 78,
+   "mean_cos": 0.9999999608890562,
+   "min_cos": 0.9999996759861074,
+   "median_rel_err": 0.0006942570748667221,
+   "max_rel_err": 0.007327868509442929,
+   "nonfinite": 0
+  },
+  "bf16_in": {
+   "maps": 78,
+   "mean_cos": 0.999996630706627,
+   "min_cos": 0.999913101541583,
+   "median_rel_err": 0.005166585946231977,
+   "max_rel_err": 0.1092009976636951,
+   "nonfinite": 0
+  },
+  "fp16_g_unscaled": {
+   "maps": 78,
+   "mean_cos": 0.9273515942197105,
+   "min_cos": 0.490033318421258,
+   "median_rel_err": 0.00024493597144199347,
+   "max_rel_err": 0.38159357530582655,
+   "nonfinite": 0
+  },
+  "fp16_g_scaled": {
+   "maps": 78,
+   "mean_cos": 0.9999999857765649,
+   "min_cos": 0.9999999804701578,
+   "median_rel_err": 0.00018622117999724322,
+   "max_rel_err": 0.0004010775063057508,
+   "nonfinite": 0
+  },
+  "maxpool": {
+   "maps": 78,
+   "mean_cos": 0.34569998094391413,
+   "min_cos": 0.20147051351345244,
+   "median_rel_err": 1.1281312394093808,
+   "max_rel_err": 2.3266387710034704,
+   "nonfinite": 0
+  }
+ }
+}

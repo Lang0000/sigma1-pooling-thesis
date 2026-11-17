@@ -1,0 +1,17 @@
+split,a,b,metric,a_value,b_value,delta,ci95_lo,ci95_hi,p,B
+test,R6_Lite-SVD-F_AMP+R6_Lite-SVD-F_AMP_s1+R6_Lite-SVD-F_AMP_s2,R6_Lite-matched+R6_Lite-matched_s1+R6_Lite-matched_s2,P,0.6704,0.8004,-0.1299,-0.1763,0.166,0.6038,10000
+test,R6_Lite-SVD-F_AMP+R6_Lite-SVD-F_AMP_s1+R6_Lite-SVD-F_AMP_s2,R6_Lite-matched+R6_Lite-matched_s1+R6_Lite-matched_s2,R,0.577,0.5252,0.0518,-0.0458,0.1646,0.38,10000
+test,R6_Lite-SVD-F_AMP+R6_Lite-SVD-F_AMP_s1+R6_Lite-SVD-F_AMP_s2,R6_Lite-matched+R6_Lite-matched_s1+R6_Lite-matched_s2,mAP50,0.6016,0.5638,0.0378,-0.0176,0.1188,0.162,10000
+test,R6_Lite-SVD-F_AMP+R6_Lite-SVD-F_AMP_s1+R6_Lite-SVD-F_AMP_s2,R6_Lite-matched+R6_Lite-matched_s1+R6_Lite-matched_s2,mAP50_95,0.3611,0.3437,0.0174,-0.0195,0.0739,0.314,10000
+test,R6_Lite-SVD-F_AMP,R6_Lite-matched,P,0.8291,0.9193,-0.0902,-0.2065,0.0047,0.0838,10000
+test,R6_Lite-SVD-F_AMP,R6_Lite-matched,R,0.6086,0.486,0.1225,-0.0009,0.2734,0.0558,10000
+test,R6_Lite-SVD-F_AMP,R6_Lite-matched,mAP50,0.6581,0.5152,0.1428,0.0312,0.2875,0.0008,10000
+test,R6_Lite-SVD-F_AMP,R6_Lite-matched,mAP50_95,0.3905,0.3131,0.0774,0.0131,0.1625,0.0038,10000
+test,R6_Lite-SVD-F_AMP_s1,R6_Lite-matched_s1,P,0.4849,0.6931,-0.2082,-0.2541,0.3234,0.9784,10000
+test,R6_Lite-SVD-F_AMP_s1,R6_Lite-matched_s1,R,0.5461,0.5807,-0.0346,-0.2182,0.1468,0.6358,10000
+test,R6_Lite-SVD-F_AMP_s1,R6_Lite-matched_s1,mAP50,0.5445,0.6095,-0.065,-0.1619,0.0577,0.332,10000
+test,R6_Lite-SVD-F_AMP_s1,R6_Lite-matched_s1,mAP50_95,0.3262,0.3695,-0.0433,-0.1064,0.0405,0.302,10000
+test,R6_Lite-SVD-F_AMP_s2,R6_Lite-matched_s2,P,0.6972,0.7887,-0.0914,-0.2681,0.3935,0.6198,10000
+test,R6_Lite-SVD-F_AMP_s2,R6_Lite-matched_s2,R,0.5763,0.5089,0.0675,-0.0072,0.1661,0.1274,10000
+test,R6_Lite-SVD-F_AMP_s2,R6_Lite-matched_s2,mAP50,0.6023,0.5668,0.0355,-0.0132,0.1106,0.4364,10000
+test,R6_Lite-SVD-F_AMP_s2,R6_Lite-matched_s2,mAP50_95,0.3664,0.3484,0.018,-0.0181,0.0714,0.669,10000

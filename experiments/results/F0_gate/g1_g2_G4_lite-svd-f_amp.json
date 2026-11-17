@@ -1,0 +1,59 @@
+{
+  "weights": "runs\\G4_lite-svd-f_amp\\weights\\last.pt",
+  "trained_kind": "sigma1_fast",
+  "kind": "sigma1_fast",
+  "split": "val",
+  "images": 573,
+  "G1": {
+    "all": {
+      "n": 924134400,
+      "max_rel": 2.3081090182465717e-07,
+      "mean_rel": 3.067943141687412e-08,
+      "max_abs": 1.0414434026273511e-06
+    },
+    "padding": {
+      "n": 30474432,
+      "max_rel": 2.0807511707050622e-07,
+      "mean_rel": 2.8229206017840046e-08,
+      "max_abs": 7.582740613187866e-07
+    },
+    "near_degenerate": {
+      "n": 109541,
+      "max_rel": 1.587614733912061e-07,
+      "mean_rel": 2.897268521797674e-08,
+      "max_abs": 4.0217258323593796e-07
+    },
+    "zero": {
+      "n": 0,
+      "max_rel": 0.0,
+      "mean_rel": 0.0,
+      "max_abs": 0.0
+    },
+    "nonfinite": 0
+  },
+  "G2": {
+    "fast_fp32": {
+      "maps": 120,
+      "mean_cos": 0.999999999999988,
+      "min_cos": 0.9999999999999535,
+      "max_err": 4.02626293246593e-06,
+      "nonfinite": 0
+    },
+    "fast_amp": {
+      "maps": 120,
+      "mean_cos": 0.9999999785412508,
+      "min_cos": 0.9999999758519952,
+      "max_err": 0.00045146843958974927,
+      "nonfinite": 0
+    },
+    "fp16_input": {
+      "maps": 120,
+      "mean_cos": 0.9999999362539189,
+      "min_cos": 0.9999985307425381,
+      "max_err": 0.010810210443113973,
+      "nonfinite": 0
+    }
+  },
+  "G1_pass": true,
+  "G2_pass": true
+}

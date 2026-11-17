@@ -1,0 +1,17 @@
+model,op,maps,median_abs_dprime,mean_abs_dprime,share_abs_dprime_gt_0_5,share_abs_dprime_gt_1
+F2_Lite-SVD-F_AMP,max,576,0.7056,0.7641,0.6701,0.2656
+F2_Lite-SVD-F_AMP,maxabs,576,1.2965,1.3197,1.0,0.684
+F2_Lite-SVD-F_AMP,sigma1,576,1.2247,1.2415,0.9965,0.6632
+F2_Lite-SVD-F_AMP,frobenius,576,1.2712,1.2887,0.9983,0.6875
+R5_Lite-matched,max,576,0.8429,0.832,0.7118,0.3802
+R5_Lite-matched,maxabs,576,1.4282,1.4348,1.0,0.875
+R5_Lite-matched,sigma1,576,1.3371,1.351,0.9983,0.8351
+R5_Lite-matched,frobenius,576,1.3896,1.4131,1.0,0.8628
+A2_Lite-SVD,max,576,0.6914,0.7479,0.6372,0.2674
+A2_Lite-SVD,maxabs,576,1.2871,1.2878,0.9965,0.6736
+A2_Lite-SVD,sigma1,576,1.2115,1.2162,0.9931,0.6632
+A2_Lite-SVD,frobenius,576,1.2469,1.2619,0.9965,0.691
+R9_Lite-MaxAbs,max,576,0.7247,0.7691,0.6892,0.2743
+R9_Lite-MaxAbs,maxabs,576,1.3109,1.3319,1.0,0.7639
+R9_Lite-MaxAbs,sigma1,576,1.2189,1.245,1.0,0.7378
+R9_Lite-MaxAbs,frobenius,576,1.2591,1.294,1.0,0.7604
